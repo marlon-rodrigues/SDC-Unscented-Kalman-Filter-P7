@@ -24,8 +24,6 @@ The project files are located in the "src" folder. The files are the following:
 
 *main.cpp - communicates with the Term 2 Simulator receiving data measurements, calls a function to run the Unscented Kalman filter, calls a function to calculate RMSE. Reads in the data and sends a sensor measurement to ufk.cpp.
 
-*ukf.cpp - initializes the filter, calls the predict function, calls the update function. Takes the sensor data and initializes variables and updates variables. The Kalman filter equations are not in this file. FusionEKF.cpp has a variable called ekf_, which is an instance of a KalmanFilter class. The ekf_ will hold the matrix and vector values. You will also use the ekf_ instance to call the predict and update equations.
-
 *ukf.cpp - initializes the filter, defines the predict function, the update function for lidar, and the update function for radar.
 
 *tools.cpp- function to calculate RMSE.
